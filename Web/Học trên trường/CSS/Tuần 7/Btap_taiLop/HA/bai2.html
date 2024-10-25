@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 2</title>
+    <style>
+        /* Menu chính */
+        .menu-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #2980b9; /* Đổi màu xanh đậm hơn */
+            z-index: 1000;
+            height: 60px; /* Chiều cao của thanh menu */
+        }
+
+        /* Danh sách menu */
+        .menu {
+            margin: 0;
+            padding: 0;
+            display: inline;
+            justify-content: space-around;
+            align-items: center; /* Căn giữa theo chiều dọc */
+            height: 100%; /* Chiều cao của menu bằng với thanh */
+        }
+
+        /* Các mục của menu */
+        .menu > li {
+            position: relative;
+            display: inline-block;
+            padding: 20px;
+            color: white;
+            cursor: pointer;
+        }
+
+        /* Hiển thị submenu khi di chuột */
+        .menu > li:hover .submenu {
+            display: block;
+        }
+
+        /* Submenu */
+        .submenu {
+            display: none;
+            position: absolute;
+            top: 100%; /* Đặt submenu ngay dưới thanh menu */
+            background-color: #1f639a; /* Đổi màu xanh đậm hơn */
+            min-width: 150px;
+            padding: 0;
+            margin: 0;
+        }
+
+        /* Các mục trong submenu */
+        .submenu li {
+            color: white; /* Đổi màu chữ submenu */
+            padding: 10px;
+        }
+
+        /* Đổi màu nền khi hover submenu */
+        .submenu li:hover {
+            background-color: #3b9ed8; /* Đổi màu khi hover */
+        }
+
+        /* Nội dung */
+        .content {
+            background-color:  gainsboro;
+            width: 50%;
+            margin: auto;
+            padding: 70px 20px;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="menu-container">
+        <ul class="menu">
+            <li>Trang chủ</li>
+            <li>Tin tức
+                <ul class="submenu">
+                    <li>Tin tức 1</li>
+                    <li>Tin tức 2</li>
+                    <li>Tin tức 3</li>
+                </ul>
+            </li>
+            <li>Giới thiệu
+                <ul class="submenu">
+                    <li>Giới thiệu 1</li>
+                    <li>Giới thiệu 2</li>
+                    <li>Giới thiệu 3</li>
+                </ul>
+            </li>
+            <li>Sự kiện
+                <ul class="submenu">
+                    <li>Sự kiện 1</li>
+                    <li>Sự kiện 2</li>
+                    <li>Sự kiện 3</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="content">
+       <h3>Hội nghị kết nối các nhà khoa học với doanh nghiệp trong lĩnh vực công nghệ sinh học, thực phẩm đồ uống</h3>
+       <p>Chiều ngày 26 tháng 9 năm 2024, Viện Khoa học Tự nhiên Trường Đại học Sư phạm Hà Nội phối hợp với Trung tâm Ứng dụng Khoa học Công nghệ và Khởi nghiệp (COSTAS), Hội Nữ trí thức Việt Nam tổ chức “Hội nghị kết nối các nhà khoa học với doanh nghiệp trong lĩnh vực công nghệ sinh học, thực phẩm đồ uống”. Tham dự Hội nghị có GS.TS. Lê Mai Hương Phó Chủ tịch Hội Nữ trí thức Việt Nam, Th.S Lê Thị Khánh Vân Giám đốc Trung tâm Ứng dụng Khoa học Công nghệ và Khởi nghiệp. Về phía Trường Đại học Sư phạm Hà Nội có sự tham dự của PGS.TS Dương Minh Lam Trưởng Phòng KH&CN, GS.TS Lục Huy Hoàng Phụ trách Viện Khoa học Tự nhiên, PGS.TS Trần Đức Hậu, Phó Trưởng Khoa Sinh cùng các nhà khoa học có kết quả nghiên cứu và sản phẩm ứng dụng trình bày tại Hội nghị. Hội nghị cũng thu hút sự tham gia của hơn 20 doanh nghiệp hoạt động trong lĩnh vực công nghệ sinh học, thực phẩm đồ uống...
+       </p>
+    </div>
+</body>
+</html>

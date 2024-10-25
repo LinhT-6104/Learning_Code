@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bài 2</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            width: 600px;
+            min-height: 400px;
+            margin: 0 auto;
+        }
+        .section {
+            width: 100%;
+        }
+        .header {
+            height: 80px;
+            background-color: palevioletred;
+        }
+        .nav {
+            height: 50px;
+            background-color: green;
+        }
+        .content {
+            height: 320px;
+            background-color: gray;
+            display: flex;
+            justify-content: space-between;
+        }
+        .footer {
+            height: 30px;
+            background-color: burlywood;
+        }
+        .box {
+            width: 30%;
+            height: 200px;
+            margin-left: 10px;
+            margin-right: 20px;
+        }
+        .box .row {
+            width: 100%;
+            background-color: white;
+            margin-top: 1px;
+        }
+        .row.height-small {
+            height: 30px;
+        }
+        .row.height-medium {
+            height: 36px;
+        }
+        .row.height-large {
+            height: 90px;
+        }
+        .row.height-xlarge {
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="section header"></div>
+        <div class="section nav"></div>
+        <div class="section content">
+            <div class="box">
+                <div class="row height-small"></div>
+                <div class="row height-medium"></div>
+                <div class="row height-large"></div>
+                <div class="row height-xlarge"></div>
+            </div>
+            <div class="box">
+                <div class="row height-small"></div>
+                <div class="row height-large"></div>
+                <div class="row height-medium"></div>
+                <div class="row height-medium"></div>
+                <div class="row height-medium"></div>
+                <div class="row height-medium"></div>
+                <div class="row height-medium"></div>
+            </div>
+            <div class="box">
+                <div class="row height-small"></div>
+                <div class="row height-small"></div>
+                <div class="row height-small"></div>
+                <div class="row height-small"></div>
+                <div class="row height-small"></div>
+                <div class="row height-small"></div>
+                <div class="row height-small"></div>
+                <div class="row height-small"></div>
+                <div class="row height-small"></div>
+                <div class="row height-small"></div>
+            </div>
+        </div>
+        <div class="section footer"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ví dụ overflow</title>
+    <style>
+        .visible-overflow {
+            width: 200px;
+            height: 100px;
+            border: 1px solid black;
+            overflow: visible;
+            margin-bottom: 10px;
+        }
+
+        .hidden-overflow {
+            width: 200px;
+            height: 100px;
+            border: 1px solid black;
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+
+        .scroll-overflow {
+            width: 200px;
+            height: 100px;
+            border: 1px solid black;
+            overflow: scroll;
+            margin-bottom: 10px;
+        }
+
+        .auto-overflow {
+            width: 200px;
+            height: 100px;
+            border: 1px solid black;
+            overflow: auto;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="visible-overflow">
+        Nội dung dài vượt ra khỏi khung này và sẽ được hiển thị đầy đủ mà không bị giới hạn.
+        Nội dung dài vượt ra khỏi khung này và sẽ được hiển thị đầy đủ mà không bị giới hạn.
+    </div>
+
+    <div class="hidden-overflow">
+        Nội dung dài vượt ra khỏi khung này và sẽ bị ẩn.
+        Nội dung dài vượt ra khỏi khung này và sẽ bị ẩn.
+        Nội dung dài vượt ra khỏi khung này và sẽ bị ẩn.
+        Nội dung dài vượt ra khỏi khung này và sẽ bị ẩn.
+    </div>
+
+    <div class="scroll-overflow">
+        Nội dung dài vượt ra khỏi khung này và sẽ có thanh cuộn để xem nội dung.
+        Nội dung dài vượt ra khỏi khung này và sẽ có thanh cuộn để xem nội dung.
+    </div>
+
+    <div class="auto-overflow">
+        Nội dung dài vượt ra khỏi khung này và thanh cuộn sẽ tự động xuất hiện khi cần.
+        Nội dung dài vượt ra khỏi khung này và thanh cuộn sẽ tự động xuất hiện khi cần.
+    </div>
+
+</body>
+</html>

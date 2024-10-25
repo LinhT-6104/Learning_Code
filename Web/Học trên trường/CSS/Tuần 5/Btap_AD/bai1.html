@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap" rel="stylesheet">
+    <title>Bài 1: Phân loại giữa HTML và CSS</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            background: gray;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid black;
+        }
+
+        th {
+            background-color: #81037E;
+            color: black;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .html {
+            background-color: #FC68B2;
+        }
+
+        .html h2 {
+            color: red;
+            font-size: 28px;
+        }
+
+        .html p {
+            color: yellow;
+            font-family: "Playpen Sans", cursive;
+            font-style: italic;
+            font-size: 18px;
+        }
+
+        .css {
+            background-color: #FC68B2;
+        }
+
+        .css h2 {
+            color: blue;
+            font-size: 28px;
+        }
+
+        .css p {
+            color: #407439;
+            font-style: italic;
+            font-size: 18px;
+        }
+
+        .example {
+            background-color: #877C80;
+        }
+
+        .example p {
+            color: #B4AA5C;
+            background-color: #12FFEB;
+            font-style: italic;
+            font-size: 16px;
+        }
+
+        .properties {
+            background-color: #FE0067;
+        }
+
+        .properties p {
+            color: #D5DAAD;
+            font-family: "Playpen Sans", cursive;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th colspan="2">Phân loại giữa ngôn ngữ HTML và CSS</th>
+        </tr>
+        <tr>
+            <td class="html">
+                <h2>Ngôn ngữ HTML</h2>
+                <p>Để thiết kế khung trang web</p>
+            </td>
+            <td class="css">
+                <h2>Ngôn ngữ CSS</h2>
+                <p>Để thay đổi các thuộc tính của phần tử trong trang web: Phông chữ, màu chữ, màu nền,...</p>
+            </td>
+        </tr>
+        <tr>
+            <td class="example">
+                <p>Sử dụng các cặp thẻ div, p, h1, h2...</p>
+            </td>
+            <td class="properties">
+                <p>Sử dụng các thuộc tính như: background-color, font-family, color, font-size,...</p>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
+
+
+Inline
+Internal
+External

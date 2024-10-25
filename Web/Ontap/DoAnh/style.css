@@ -1,0 +1,100 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: yellow;
+}
+
+.content {
+    margin: 0px 300px;
+}
+
+.div1 {
+    display: flex;
+    flex-direction: row;
+    padding: 0px 20px;
+    align-items: flex-start baseline;
+    justify-content: space-around;
+}
+
+.div1_left {
+    line-height: 50px;
+}
+
+.div1_left .header {
+    font-size: 30px;
+}
+
+.div1_left td {
+    width: 100px;
+    align-items: center;
+    text-align: center;
+    padding: 0px 5px;
+}
+
+.bottom {
+    justify-content: space-between;
+}
+
+.div1_left .bottom {
+    display: flex;
+    flex-direction: row;
+    line-height: 50px;
+}
+
+
+.div1_right {
+    width: 100px;
+    height: 100px;
+    background: white;
+    border-radius: 50%;
+    text-align: center;
+    margin-top: 20px;
+}
+#dn{
+width:100px;
+height:30px;
+border-radius: 50px;
+}
+.timkiem{
+border-radius: 10px;
+width: 225px;
+height:30px;
+}
+.line{
+width:500px;
+}
+.sanpham img{
+width:300px;
+height:300px;
+}
+#ten{
+font-size: 20px;
+}
+#mua input{
+width:50px;
+height:30px;
+}
+.sanpham{
+text-align: center;
+}
+.bang{
+width:200px;
+height:400px;
+text-align: center;
+}
+#khac{
+background: rgb(95, 91, 91);
+color:aliceblue;
+}
+.khoi3{
+margin-top:30px;
+display: flex;
+flex-direction: row;
+padding: 0px 20px;
+align-items: flex-start;
+justify-content:space-around;
+}
+.tieude{
+text-align: center;
+}`

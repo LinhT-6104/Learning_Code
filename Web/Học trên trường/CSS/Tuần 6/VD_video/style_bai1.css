@@ -1,0 +1,30 @@
+/* Định dạng đoạn văn bản */
+p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #555;
+}
+
+/* Định dạng hình ảnh và hộp chứa */
+.image-container {
+    height: 300px;
+    width: 50%;
+    max-width: 600px;
+    overflow: auto; /* Kiểm soát overflow */
+    border: 2px solid gray;
+    background: rgb(241, 239, 239);
+    padding: 10px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.image-container img {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.image-container p {
+    font-size: 14px;
+    color: #333;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập</title>
+    <link rel="stylesheet" href="../css/dangnhap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="../js/dangnhap.js" defer></script>
+</head>
+<body>
+    <nav class="header">
+        <ul class="menu1">
+            <li class="letter">News<span id="letter">A</span>Sport</li>
+            <li id="date"></li>
+        </ul>
+        <div class="nut" onclick="toggleMenu()">&#9776;</div>
+        <ul class="menu" id="menu">
+            <li id="left">
+                <li><a href="../index.html" >Trang chủ</a></li>
+                
+            </li>
+            
+            <li id="right">
+                <li class="login">
+                    <a href="dangnhap.html" id="loginBt">
+                        <i class="fas fa-user" class="logo"></i>
+                        <p id="hide">Đăng nhập</p>
+                    </a>
+                </li> 
+                <li class="con">
+                    <a id="con" href="lienhe.html">
+                        <i class="fas fa-envelope" class="logo"></i>
+                        <p id="hide">Liên hệ</p>
+                    </a>
+                </li>
+            </li>
+        </ul> 
+    </nav>
+    <div class="form" id="login-form">
+        <h2>Đăng nhập</h2>
+        <form>
+            <div class="group1">
+                <input type="text" id="namelogin" name="namelogin" placeholder="Tên đăng nhập" required>
+            </div>
+            <div class="group1">
+                <input type="password" id="password" name="password" placeholder="Mật khẩu" required>
+            </div>
+            <button type="button" onclick="kiemtradangnhap()" class="in">Đăng nhập</button>
+        </form>
+        <p class="ques">Bạn chưa có tài khoản? <a href="../html/dangky.html" id="registerLink">Tạo tài khoản</a></p>
+    </div>
+
+</body>
+</html>

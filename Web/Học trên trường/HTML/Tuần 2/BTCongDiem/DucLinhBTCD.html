@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập nhanh</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        .image-section {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+
+        .image-section div {
+            text-align: center;
+            width: 30%;
+        }
+
+        .form-section {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .form-container {
+            background-color: #cc3333;
+            border: 1px solid #fff;
+            padding: 20px;
+            width: 250px;
+            color: #fff;
+        }
+
+        .form-container h3 {
+            text-align: center;
+            border-bottom: 1px solid #fff;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="number"],
+        input[type="date"],
+        input[type="email"],
+        input[type="color"],
+        input[type="file"],
+        input[type="time"],
+        input[type="url"],
+        input[type="range"],
+        input[type="radio"],
+        input[type="checkbox"] {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        input[type="submit"],
+        input[type="reset"],
+        button {
+            width: 100%;
+            padding: 5px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bài tập nhanh</h1>
+    <h2>Đề bài: Sử dụng kiến thức về form và bảng xây dựng như hình bên dưới</h2>
+
+    <div class="image-section">
+        <div>
+            <img src="https://fit.hnue.edu.vn/img/hero/intro-1.png" alt="Công nghệ thông tin" width="100%">
+            <p><strong>Công nghệ thông tin</strong></p>
+            <p>Đào tạo các cử nhân có kiến thức chuyên ngành về một trong hai định hướng: Công nghệ phần mềm và Khoa học dữ liệu.</p>
+        </div>
+        <div>
+            <img src="https://fit.hnue.edu.vn/img/hero/intro-1.png" alt="Sư phạm tin học" width="100%">
+            <p><strong>Sư phạm tin học</strong></p>
+            <p>Đào tạo các giảng viên, nghiên cứu viên tại các trường đại học, viện nghiên cứu; giáo viên Tin học các cấp.</p>
+        </div>
+        <div>
+            <img src="https://fit.hnue.edu.vn/img/hero/intro-1.png" alt="Sư phạm tin học dạy bằng tiếng anh" width="100%">
+            <p><strong>Sư phạm tin học dạy bằng tiếng anh</strong></p>
+            <p>Đào tạo các giảng viên, nghiên cứu viên có khả năng giảng dạy CNTT, Tin học bằng tiếng Anh tại các trường quốc tế.</p>
+        </div>
+    </div>
+
+    <div class="form-section">
+        <div class="form-container">
+            <h3>Form thứ nhất</h3>
+            <form>
+                Text: <input type="text" name="text"><br>
+                Password: <input type="password" name="password"><br>
+                Number: <input type="number" name="number"><br>
+                Radio: <input type="radio" name="radio"><br>
+                Checkbox: <input type="checkbox" name="checkbox"><br>
+                Color: <input type="color" name="color"><br>
+                Date: <input type="date" name="date"><br>
+                Email: <input type="email" name="email"><br>
+            </form>
+        </div>
+
+        <div class="form-container">
+            <h3>Form thứ hai</h3>
+            <form>
+                File: <input type="file" name="file"><br>
+                Time: <input type="time" name="time"><br>
+                URL: <input type="url" name="url"><br>
+                Range: <input type="range" name="range"><br>
+                Image: <input type="image" src="https://fit.hnue.edu.vn/img/logo.png" alt="Submit" width="30"><br>
+                Submit: <input type="submit" value="Nút Submit"><br>
+                Reset: <input type="reset" value="Đặt lại"><br>
+                Button: <button>Next</button><br>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

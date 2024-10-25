@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 500px;
+            background: yellow; /* Thuộc tính background img hay color đều được */
+            color: brown
+        }
+        p {
+            width: 800px;
+            background: brown;
+            color: white
+        }
+
+        /* Các đối tượng có class đều bị tác động */
+        [class]{
+            background: pink;
+            font-size: 40px;
+            color: blue;
+        }
+        
+        /* Thuộc tính có class số 1, 2 liền hay có dấu cách đều bị tác động */
+        [class *= class] {
+            background: black;
+            color: white;
+        }
+        
+        /* Thuộc tính có chứa từ class và coi class là 1 từ*/
+        [class ~= class] {
+            background: chocolate;
+            color: black;
+        }
+
+        /* Tác động các phần tử có giá trị của class = class1 */
+        [class = class1] {
+            background: cornflowerblue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <blockquote><blockquote><blockquote>
+        <p class="class 1" id="id1">Văn bản tạo ra từ thẻ p có class1 và id1</p>
+        <p class="class 2">Văn bản tạo ra từ thẻ p có class2</p>
+        <div>Văn bản tạo ra từ thẻ div</div>
+        <p class="class 1">Văn bản tạo ra từ thẻ p có class1</p>
+        <p>Văn bản tạo ra từ thẻ p</p>
+        <div class="class2">Văn bản tạo ra từ thẻ div có class2 co name</div>
+        <div class="class1">Văn bản tạo ra từ thẻ div có class1</div>
+        <div>Văn bản tạo ra từ thẻ div</div>
+        <p>Văn bản tạo ra từ thẻ p</p>
+    </blockquote></blockquote></blockquote>
+</body>
+</html>
