@@ -1,0 +1,4 @@
+Ho ten sinh vien: Le Hoang
+Diem tong ket: 8.5
+Ho ten sinh vien: Nguyen Hoang
+Diem tong ket: 8
