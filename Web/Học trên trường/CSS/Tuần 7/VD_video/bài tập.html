@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập gộp</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        .header, .footer {
+            background-color: #00cc99;
+            color: black;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .footer {
+            background-color: #ff6699;
+        }
+
+        .main-1 {
+            background-color: #da1742;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            padding: 20px;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+
+        .nav .item {
+            background-color: rgba(255, 255, 255, 0.3);
+            padding: 10px 20px;
+            margin: 0 5px;
+            color: white;
+        }
+        .nav1 {
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+
+        .nav1 .item {
+            background-color: rgba(255, 255, 255, 0.3);
+            padding: 10px 20px;
+            margin: 0 5px;
+            color: white;
+        }
+
+        .main-2 {
+            background-color: #1782da;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            padding: 20px;
+        }
+
+        .nav .item:nth-child(odd) {
+            background-color: #ffcccb;
+        }
+
+        .nav .item:nth-child(even) {
+            background-color: #800000;
+        }
+
+        .nav .item {
+            flex: 1 0 100px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        .main-3 {
+            background-color: #7fca00;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            padding: 20px;
+        }
+
+        .main-content {
+            font-size: 24px;
+            text-align: center;
+            padding: 20px;
+            color: black;
+        }
+
+        .banner {
+            background-color: #aad28c;
+            width: 100%;
+            height: 100px;
+            text-align: center;
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+
+        .boxes {
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+            margin-top: 10px;
+        }
+
+        .box {
+            background-color: #ffcccb;
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .box1 {
+            width: 40%;
+            background-color: #ffcccb;
+            height: 350px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            color: black;
+            border: 2px solid #7fca00;
+        }
+
+        .box2, .box3 {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            border: 2px solid #7fca00;
+        }
+
+        .box2-1, .box3-1 {
+            display: flex;
+            flex-direction: row;
+            border: 2px solid #7fca00;
+        }
+
+        .sub-box1 {
+            background-color: #ff9999;
+            flex-basis: 40%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            border: 2px solid #7fca00;
+        }
+
+        .sub-box2 {
+            background-color: #ffcccb;
+            flex-basis: 60%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            border: 2px solid #7fca00;
+        }
+
+        .box2-2, .box3-2 {
+            background-color: #ff9999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+        }
+
+        .b-boxes {
+            display: flex;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .b-box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 50px;
+            border: 2px solid #7fca00;
+            color: black;
+        }
+
+        .b1 {
+            flex-basis: 10%;
+            background-color: #ffcccb;
+        }
+
+        .b2 {
+            flex-basis: 60%;
+            background-color: #aad28c;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="header">
+        Phần đầu trang
+    </div>
+
+    <div class="main-1">
+        <div>Phần chính của trang 1</div>
+        <div class="nav1">
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+            <div class="item">Item 4</div>
+            <div class="item">Item 5</div>
+            <div class="item">Item 6</div>
+            <div class="item">Item 7</div>
+            <div class="item">Item 8</div>
+            <div class="item">Item 9</div>
+        </div>
+    </div>
+    <div class="footer">
+        Phần chân trang
+    </div>
+
+    <div class="main-2">
+        <div>Phần chính của trang 2</div>
+        <div class="nav">
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+            <div class="item">Item 4</div>
+            <div class="item">Item 5</div>
+            <div class="item">Item 6</div>
+            <div class="item">Item 7</div>
+            <div class="item">Item 8</div>
+            <div class="item">Item 9</div>
+        </div>
+        <div class="nav">
+            <div class="item">Item 10</div>
+            <div class="item">Item 11</div>
+            <div class="item">Item 12</div>
+            <div class="item">Item 13</div>
+            <div class="item">Item 14</div>
+            <div class="item">Item 15</div>
+            <div class="item">Item 16</div>
+            <div class="item">Item 17</div>
+            <div class="item">Item 18</div>
+        </div>
+    </div>
+    <div class="footer">
+        Phần chân trang
+    </div>
+
+    <div class="main-3">
+        <div class="main-content">Phần chính của trang 3</div>
+
+        <div class="banner">Banner</div>
+
+        <div class="boxes">
+            <div class="box box1">
+                <img src="https://kenh14cdn.com/thumb_w/660/203336854389633024/2022/6/29/photo-1-1656494746073786006764.jpg" style="width:100%; height:100%;">
+            </div>
+            <div class="box box2">
+                <div class="box2-1">
+                    <div class="sub-box1">Bài tập 1</div>
+                    <div class="sub-box2">Xem chi tiết</div>
+                </div>
+                <div class="box2-2">Nội dung mô tả</div>
+            </div>
+            <div class="box box3">
+                <div class="box2-1">
+                    <div class="sub-box1">Bài tập 2</div>
+                    <div class="sub-box2">Xem chi tiết</div>
+                </div>
+                <div class="box3-2">Nội dung mô tả</div>
+            </div>
+        </div>
+
+        <div class="b-boxes">
+            <div class="b-box b1">Add 1</div>
+            <div class="b-box b1">Add 2</div>
+            <div class="b-box b1">Add 4</div>
+            <div class="b-box b1">Add 3</div>
+            <div class="b-box b2">Liên hệ với chúng tôi</div>
+        </div>
+    </div>
+
+    <div class="footer">
+        Phần chân trang
+    </div>
+</div>
+
+</body>
+</html>

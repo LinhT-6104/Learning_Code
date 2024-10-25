@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng bài</title>
+    <link rel="stylesheet" href="../css/dangbai.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="../js/dangbai.js" defer></script>
+    <style>
+        table{
+            width: 100%;
+        }
+        td, th{
+            height: 20px;
+            margin: 0;
+            
+        }
+        #post-form,#sua-form{
+            display: none;
+        }
+        #xem,#sua{
+            width: 70px;
+        }
+        .dang{
+            width:1250px;
+            margin-left: -10%;
+        }
+    </style>
+</head>
+<body>
+    <nav class="header">
+        <ul class="menu1">
+            <li class="letter">News<span id="letter">A</span>Sport</li>
+            <li id="date"></li>
+        </ul>
+        <div class="nut" onclick="toggleMenu()">&#9776;</div>
+        <ul class="menu" id="menu">
+            <li id="left">
+                <li id="quanli"><a href="quanlitaikhoan.html">Quản lí tài khoản</a></li>
+                <li id="trangduyet"><a href="duyetbai.html">Duyệt bài</a></li>
+                <li id="trangdang"><a href="dangbai.html">Đăng bài</a></li>
+                <li><a href="trangchu.html">Trang chủ</a></li>
+                
+            </li>
+            
+            <li id="right">
+                <li class="logout">
+                    <a href="#" id="logoutBt">
+                        <i class="fas fa-user" class="logo"></i>
+                        <p id="hide">Đăng xuất</p>
+                    </a>
+                </li>
+                <li class="con">
+                    <a id="con" href="lienhe.html">
+                        <i class="fas fa-envelope" class="logo"></i>
+                        <p id="hide">Liên hệ</p>
+                    </a>
+                </li> 
+            </li>
+        </ul>
+    </nav>
+
+    <div id="post-container">
+        <button id="hienformthem">Thêm bài đăng</button>
+        <form id="post-form">
+            <h1>Đăng bài</h1>
+            <label for="title">
+                <div>Tiêu đề</div>
+                <input type="text" id="title" required>
+            </label><br><br>
+            <label for="describe">
+                <div>Mô tả ngắn về bài đăng</div>
+                <input type="text" id="describe" required>
+            </label><br><br>
+            <label>
+                <div>Ảnh nổi bật</div>
+                <input type="file" id="anhnoibat" width="500px" required>
+            </label><br>
+            <div>
+                <img id="hienthianh" src="" alt="">
+            </div>
+            <label for="content">
+                <div>Nội dung bài đăng</div>
+                <textarea id="content" cols="30" rows="10" required></textarea>
+            </label><br>
+            <button type="button" onclick="dangbai()">Đăng bài</button>
+        </form>
+        <form id="sua-form">
+            <h1>Sửa bài đăng </h1>
+            <label>
+                <div>Tiêu đề</div>
+                <input type="text" id="re_title" required>
+            </label><br><br>
+            <label>
+                <div>Mô tả ngắn về bài đăng</div>
+                <input type="text" id="re_describe" required>
+            </label><br><br>
+            <label>
+                <div>Ảnh nổi bật</div>
+                <input type="file" id="re_anhnoibat" width="500px" required><br>
+            </label><br>
+            <div>
+                <img id="re_hienthianh" src="" alt="">
+            </div>
+            <label>
+                <div>Nội dung bài đăng</div>
+                <textarea id="re_content" cols="30" rows="10" required></textarea>
+            </label><br>
+            <button id="btnsua" type="button">Sửa bài</button>
+        </form>
+            <h2>Bài đăng của bạn</h2>
+            <div>
+            <table border="1px" class = "dang">
+                <thead>
+                    <tr>
+                        <th>STT</th>
+                        <th class="td">Tiêu đề</th>
+                        <th>Nội dung</th>
+                        <th>Ngày đăng</th>
+                        <th>Trạng thái</th>
+                        <th>Hoạt động</th>
+                    </tr>
+                </thead>
+                <tbody id="bangthem">
+                    <!-- thêm cột vô đey -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+        
+    
+</body>
+</html>

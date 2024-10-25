@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+</head>
+<body>
+    <div class="content">
+        <div class="block-outsite">
+            <div class="block" id="b1">Khối 1</div>
+            <div class="block" id="b2">Khối 2</div>
+            <div class="block" id="b3">Khối 3</div>
+        </div>
+    </div>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .content {
+            margin: 50px 300px;
+            width: 300px;
+            border: 1px solid green;
+        }
+        .block-outsite{
+            width: 200px;
+            height: 200px;
+            margin-top: 20px;
+            background-color: red;
+            color: #939e3c;
+            font-size: 40px;
+            text-align: center;
+            line-height: 200px;
+            font-weight: bold;
+            position: relative; /*Vật làm mốc*/
+        }
+        .block {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+        }
+        #b1 {
+            background-color: green;
+            top: 5px;
+            left: 5px;
+            z-index: 3;
+        }
+        #b2 {
+            background-color: pink;
+            top: 40px;
+            left: 40px;
+            z-index: 1;
+        }
+        #b3 {
+            background-color: yellow;
+            top: 20px;
+            left: 20px;
+            z-index: 2;
+        }
+    </style>
+</body> 
+</html>

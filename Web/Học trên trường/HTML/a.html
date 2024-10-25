@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+            position: relative;
+            /* Để thiết lập ngữ cảnh cho phần tử absolute bên trong */
+        }
+
+        .box {
+            height: 100px;
+            background-color: lightblue;
+            margin: 10px 0;
+        }
+
+        .absolute-box {
+            position: absolute;
+            /* Phần tử này sẽ được loại bỏ khỏi luồng tài liệu */
+            top: 50px;
+            left: 50px;
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">Box 1</div>
+        <div class="absolute-box">Box 2 (Absolute)</div>
+        <div class="box">Box 3</div>
+    </div>
+
+</body>
+
+</html>

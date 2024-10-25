@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Dropdown Menu</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: white;
+            color: black;
+            padding: 25px;
+        }
+
+        .menu-wrapper {
+            padding: 10px;
+            background-color: #d3d3d3;
+            border-radius: 10px;
+            width: min-content;
+        }
+
+        ul {
+            list-style-type: none; 
+            padding: 0;
+        }
+
+        .primary-menu > li {
+            padding: 10px 15px;
+            border: 1px solid #bbb;
+            background-color: white;
+            width: 200px;
+            cursor: pointer;
+            font-size: 20px;
+            margin-bottom: 5px;
+            position: relative;
+        }
+
+        .primary-menu > li:hover {
+            background-color: gainsboro; 
+        }
+
+        .secondary-menu,
+        .tertiary-menu {
+            display: none; 
+            position: absolute; 
+            top: 0; 
+            left: 100%; 
+            background-color: #ffffff;
+            border: 2px solid #bbb; 
+            min-width: 220px;
+            max-width: 250px;
+        }
+
+        .secondary-menu > li,
+        .tertiary-menu > li {
+            padding: 10px 15px;
+            cursor: pointer;
+            font-size: 15px;
+            margin-bottom: 6px;
+        }
+
+        .secondary-menu > li:hover,
+        .tertiary-menu > li:hover {
+            background-color: gainsboro; 
+        }
+
+        .tertiary-menu li a {
+            text-decoration: none;
+            color: black;
+            display: block; 
+        }
+
+        .tertiary-menu li a:hover {
+            color: red; 
+        }
+
+        .primary-menu > li:hover > .secondary-menu, 
+        .secondary-menu > li:hover > .tertiary-menu {
+            display: block; 
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="menu-wrapper">
+        <ul class="primary-menu">
+            <li>
+                Laptops & Tablets
+                <ul class="secondary-menu">
+                    <li>
+                        Acer Laptops
+                        <ul class="tertiary-menu">
+                            <li><a href="#">Acer Aspire</a></li>
+                            <li><a href="#">Acer Swift</a></li>
+                            <li><a href="#">Acer Predator</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Dell Laptops</a></li>
+                    <li><a href="#">HP Laptops</a></li>
+                    <li><a href="#">Lenovo Laptops</a></li>
+                </ul>
+            </li>
+
+            <li>
+                Gaming Laptops
+                <ul class="secondary-menu">
+                    <li>
+                        ASUS Laptops
+                        <ul class="tertiary-menu">
+                            <li><a href="#">ASUS ROG</a></li>
+                            <li><a href="#">ASUS TUF</a></li>
+                            <li><a href="#">ASUS Zenbook</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">MSI Laptops</a></li>
+                    <li><a href="#">Razer Laptops</a></li>
+                    <li><a href="#">Gigabyte Laptops</a></li>
+                </ul>
+            </li>
+
+            <li>
+                Accessories
+                <ul class="secondary-menu">
+                    <li>
+                        Mice
+                        <ul class="tertiary-menu">
+                            <li><a href="#">Gaming Mouse</a></li>
+                            <li><a href="#">Office Mouse</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Keyboards</a></li>
+                    <li><a href="#">Headphones</a></li>
+                    <li><a href="#">Cables & Adapters</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+</body>
+
+</html>

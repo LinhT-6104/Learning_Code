@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tin tức thể thao</title>
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="js/index.js" defer></script>
+</head>
+<body>
+    <nav class="header">
+        <ul class="menu1">
+            <li class="letter">News<span id="letter">A</span>Sport</li>
+            <li id="date"></li>
+        </ul>
+        <div class="nut" onclick="toggleMenu()">&#9776;</div>
+        <ul class="menu" id="menu">
+            <li id="left">
+                <li >
+                    <li><input id="search" class="search-bar" type="text" placeholder="Tìm kiếm..."></li>
+                    <li>    <a href="#" id="icon">
+                            <i class="fas fa-search"></i>
+                        </a>
+                    </li>
+                </li>
+                <li><a href="#">Tin tức</a>
+                    <ul class="submenu">
+                        <li id="old"><a href="#">Tin cũ nhất</a></li>
+                        <li id="newtin"><a href="#">Tin mới nhất</a></li>
+                        <li id="all"><a href="#">Tất cả các tin</a></li>
+                    </ul>    
+                </li>
+                <li><a href="#">Trang chủ</a></li>
+                
+            </li>
+            
+            <li id="right">
+                <li class="login">
+                    <a href="html/dangnhap.html" id="loginBt">
+                        <i class="fas fa-user" class="logo"></i>
+                        <p id="hide">Đăng nhập</p>
+                    </a>
+                </li>
+                <li class="con">
+                    <a id="con" href="html/lienhe.html">
+                        <i class="fas fa-envelope" class="logo"></i>
+                        <p id="hide">Liên hệ</p>
+                    </a>
+                </li>
+            </li>
+        </ul>
+    </nav>
+    <div class="lay hidden" id="lay"></div>
+    <div class="content">
+        <div class="left-menu" id="left-menu">
+            <div class="ver-menu" id="ver-menu"></div>
+        </div>
+        <div class="main-content">
+            <h1 id="tintuc"></h1>
+            <div class="news" id="news"></div>
+        </div>
+    </div>
+</body>
+</html>

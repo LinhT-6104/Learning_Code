@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 1</title>
+    <style>
+        * {
+            box-sizing: border-box; 
+        }
+
+        table {
+            width: 100%;
+            table-layout: fixed; 
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 10px;
+            vertical-align: top;
+        }
+
+        div {
+            padding: 10px;
+            height: 300px;
+            overflow: hidden; 
+            text-overflow: ellipsis; 
+            white-space: nowrap; 
+        }
+
+        td:nth-child(1) div {
+            background-color: pink;
+            height: 525px;
+            width: 50px;
+            overflow: hidden;
+            white-space: unset;
+            border: 1px dashed #000;
+            text-overflow: hidden;
+        }
+
+        td:nth-child(2) div {
+            background-color: lightcoral;
+            height: 200px;
+            width: 120px;
+            overflow: hidden;
+            border: 1px dashed #000;
+            white-space: initial;
+        }
+
+        td:nth-child(3) div {
+            background-color: lightgreen;
+            height: 200px;
+            width: 120px;
+            overflow: scroll; 
+            border: 1px dashed #000;
+            white-space: normal;
+        }
+
+        td:nth-child(4) div {
+            background-color: lightblue;
+            height: 115px;
+            width: 120px;
+            overflow: visible;
+            border: 1px dashed #000;
+            white-space: normal;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <div>
+                    Môn học Nền tảng phát triển web cung cấp các kiến thức cơ bản về phương pháp, công cụ và quy trình thiết kế website. Sau khi hoàn thành môn học, người học có khả năng:
+                    • Trình bày được những khái niệm cơ bản, các nguyên tắc trong thiết kế website
+                    • Sử dụng thành thạo các ngôn ngữ, kỹ thuật mô hình và công cụ như một phương tiện để thực hiện thiết kế các trang web cơ bản
+                    • Vận dụng được các chức năng mà các công nghệ thiết kế web cung cấp để thực hiện một sản phẩm website cỡ vừa và nhỏ
+                </div>
+            </td>
+            <td>
+                <div>
+                    Michaelmas term lately over, and the Lord Chancellor sitting in Lincoln's Inn Hall. Implacable November weather. As much mud in the streets as if the waters had but newly retired from the face of the earth.
+                </div>
+            </td>
+            <td>
+                <div>
+                    Michaelmas term lately over, and the Lord Chancellor sitting in Lincoln's Inn Hall. Implacable November weather. As much mud in the streets as if the waters had but newly retired from the face of the earth.
+                </div>
+            </td>
+            <td>
+                <div>
+                    Michaelmas term lately over, and the Lord Chancellor sitting in Lincoln's Inn Hall. Implacable November weather. As much mud in the streets as if the waters had but newly retired from the face of the earth.
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

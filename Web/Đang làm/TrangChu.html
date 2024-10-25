@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- font Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <!-- font Noto serif -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <title>Trang chủ</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        .topBarContent {    
+            display: flex;
+            height: 45px;
+            align-items: center;
+            color: white;
+            cursor: pointer;
+            background: #0d2e80;
+            justify-content: space-around;
+            padding: 0px 12px;
+            
+        }   
+        .topBarLeft, .topBarRight {
+            display: flex;
+            justify-content: space-between;
+        }
+        .BarItem {
+            font-size: 14px ;
+            font-family: "Inter", sans-serif;
+            color: white;
+            padding: 8px 12px;
+        }
+        .lineBar {
+            color: white;
+
+            padding: 8px 0px;
+        }
+
+        .header {
+            height: 188px;
+        }
+        
+        /* Header */
+        .container_header {
+            height: 140px;
+            margin: 0px 50.5px;
+            padding: 0px 12px;
+            display: flex;  
+        }
+        .logo {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            margin: 0px 80px;
+        }
+        .logo img {
+            margin: 0px 15px 0px 0px;
+        }
+        .logo div h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 25px;
+            margin: 0px 0px 8px;
+        }
+        .logo div p {
+            font-size: 16px Inter;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .slogan {
+            height: 140px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+        }
+        .text_secondary_blue_sky {
+            font-size: 24px;
+            font-weight: bold;
+            font-family: "Noto Serif", serif;
+            color: #0094FF;
+        }
+
+        /* menu */
+        .menu {
+            margin: 0px 135.6px;
+            padding: 0px 12px;
+            border-top: 2px solid #ff000082;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: end;
+        }
+        .menu_items {
+            display: flex;
+            padding: 0px;
+            margin: 0px 20px;
+        }
+        .item {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px Inter;
+            padding: 8px 10px;
+        }
+        .item img {
+            width: 24px;
+            height: 22px;
+            margin: -5px 0px 0px;
+        }
+        
+        /* big_picture */
+        .big_picture img{
+            width: 100%;
+            display: inline;
+        }
+
+        /* table */
+        .table img{
+            width: 50px;
+            height: 50px;
+        }
+        .table span {
+            color: #FFFFFF;
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .table td {
+            width: 16.67%;
+        }
+        .table tr {
+            height: 173.19px;
+        }
+
+        /* event */
+        .eventColumns, .itemsColumn, .evenColumnItem1, .eventRow {
+            display: flex;
+        }
+        .eventRow{
+            justify-content: space-between;
+            margin: 0px 64px;
+        }
+        .eventRow h2 {
+            font-size: 32px;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.3;
+            font-weight: 600;
+        }
+        .importantEvent img {
+            width: 500px;
+        }
+        .importantEvent h5 {
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #028BFF;
+            font-weight: inherit;
+            outline: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="topBarLarge">
+        <div class="topBarContent">
+            <div class="topBarLeft">
+                <div style="display: flex; justify-content: center; align-items: center;"><i class="fa-solid fa-building-columns"></i></div> 
+                <div class="BarItem">Khoa</div>
+                <div class="lineBar">&#124;</div>
+                <div class="BarItem">Trung tâm</div>
+                <div class="lineBar">&#124;</div>
+                <div class="BarItem">Viện</div>
+                <div class="lineBar">&#124;</div>
+                <div class="BarItem">Trường</div>
+                <div class="lineBar">&#124;</div>
+                <div class="BarItem">Phân hiệu</div>
+            </div>
+            <div class="topBarRight">
+                <div class="BarItem">Cán bộ/Giảng viên</div>
+                <div class="lineBar">&#124;</div>
+                <div class="BarItem">Sinh viên</div>
+                <div class="lineBar">&#124;</div>
+                <div class="BarItem">Học viên</div>
+                <div class="lineBar">&#124;</div>
+                <div class="BarItem">Cựu sinh viên</div>
+                <div class="lineBar">&#124;</div>
+                <div class="BarItem">Phân hiệu</div>
+                <div class="lineBar">&#124;</div>
+                <img class="BarItem" width="27" height="18" src="https://uxwing.com/wp-content/themes/uxwing/download/flags-landmarks/united-kingdom-flag-icon.png" alt="Language">
+                <div class="lineBar">&#124;</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header" style="background-image: url('https://hnue.edu.vn/Portals/_default/skins/hnue_skin/img/menu_bg.png')">
+        <div class="container_header">
+            <div class="logo">
+                <img width="100px", height="100px" src="https://hnue.edu.vn/Portals/0/logo_blue.svg?ver=cYmdg32-MjVamKisdeAjPA%3d%3d" alt="HNUE LOGO">
+                <div>
+                    <h1>TRƯỜNG ĐẠI HỌC SƯ PHẠM HÀ NỘI</h1>
+                    <p>Hanoi National Univesity of Education</p>
+                </div>
+            </div>
+            <div class="slogan">
+                <div class="text_secondary_blue_sky">
+                    "CHUẨN MỰC - SÁNG TẠO - TIÊN PHONG"
+                </div>
+            </div>
+        </div>
+
+        <div class="menu">
+            <div class="menu_items">
+                <div class="item"><img src="https://hnue.edu.vn/Portals/_default/skins/hnue_skin/img/home.png" alt=""></div>
+                <div class="item">GIỚI THIỆU</div>
+                <div class="item">TIN TỨC</div>
+                <div class="item">ĐÀO TẠO</div>
+                <div class="item">NGHIÊN CỨU</div>
+                <div class="item">HỢP TÁC</div>
+                <div class="item">TUYỂN SINH</div>
+                <div class="item">ĐBCL</div>
+                <div class="item">CÔNG TÁC ĐOÀN</div>
+                <div class="item">THI HSK</div>
+                <div class="item">VĂN BẢN</div>
+            
+            </div>
+            <div class="search_icon">
+                <i class="material-icons">search</i>
+            </div>
+        </div>
+
+        <div class="big_picture">
+            <img src="https://hnue.edu.vn/Portals/Slideshow/637504650950033424.png" alt="">
+        </div>
+
+        <table class="table" align="center" border="0" cellpadding="0" cellspacing="0" style="background-color: #005a9c; width: 100%;">
+            <tbody>
+                <tr>
+                    <td style="text-align: center">
+                        <p>&nbsp;</p>
+                        <div><img src="https://hnue.edu.vn/portals/0/Images/hainds/tintuc.png?ver=s8SilR_vYW8ZwPofHC-xsA%3d%3d"></div>
+                        <span>ĐĂNG KÝ XÉT TUYỂN</span>
+                        <p>&nbsp;</p>
+                    </td>
+                    <td style="text-align: center">
+                        <p>&nbsp;</p>
+                        <div><img src="https://hnue.edu.vn/portals/0/Images/hainds/nganhtuyensinh.png?ver=s8SilR_vYW8ZwPofHC-xsA%3d%3d"></div>
+                        <span>ĐỀ THI THAM KHẢO</span>
+                        <p>&nbsp;</p>
+                    </td>
+                    <td style="text-align: center">
+                        <p>&nbsp;</p>
+                        <div><img src="https://hnue.edu.vn/portals/0/Images/hainds/Thongbao.png?ver=s8SilR_vYW8ZwPofHC-xsA%3d%3d"></div>
+                        <span>THÔNG BÁO TUYỂN SINH</span>
+                        <p>&nbsp;</p>
+                    </td>
+                    <td style="text-align: center">
+                        <p>&nbsp;</p>
+                        <div><img src="https://hnue.edu.vn/portals/0/Images/hainds/nganhts.png?ver=XqSmjoNZSb4%3d"></div>
+                        <span>CÁC NGHÀNH TUYỂN SINH</span>
+                        <p>&nbsp;</p>
+                    </td>
+                    <td style="text-align: center">
+                        <p>&nbsp;</p>
+                        <div><img src="https://hnue.edu.vn/portals/0/Images/hainds/tuvan.png?ver=s8SilR_vYW8ZwPofHC-xsA%3d%3d"></div>
+                        <span>TƯ VẤN TUYỂN SINH</span>
+                        <p>&nbsp;</p>
+                    </td>
+                    <td style="text-align: center">
+                        <p>&nbsp;</p>
+                        <div><img src="https://hnue.edu.vn/portals/0/Images/hainds/lienhe.png?ver=s8SilR_vYW8ZwPofHC-xsA%3d%3d"></div>
+                        <span>LIÊN HỆ</span>
+                        <p>&nbsp;</p>
+                    </td>
+
+                </tr>
+            </tbody>
+        </table>
+
+        <br>
+
+        <div class="eventRow">
+            <div class="importantEvent">
+                <h2>Sự kiện nổi bật</h2>
+                <div class="eventColumns">
+                    <div class="eventColumn1">
+                        <img src="https://hnue.edu.vn/Portals/0/NewsImages/638630182832459978.jpg" alt="">
+                        <h5>Hội nghị kết nối các nhà khoa học với doanh nghiệp trong lĩnh vực công nghệ sinh học, thực phẩm đồ uống</h5>
+                    </div>
+                    <div class="eventColumn2">
+                        <div class="eventColumnItems">
+                            <div class="evenColumnItem1">
+                                <img src="https://hnue.edu.vn/Portals/0/NewsImages//200/100/638606070642920528.jpg" alt="">
+                                <h6>Trường Đại học Sư Phạm Hà Nội tổ chức đón</h6>
+                            </div>
+                            <span>
+
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="notifications">
+                <h2>Thông báo</h2>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

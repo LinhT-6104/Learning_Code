@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- <script src="../js/index.js" defer></script> -->
+    <script src="../js/trangchu.js" defer></script>
+    <style>
+        img{
+            height: 200px;
+        }
+    </style>
+
+</head>
+<body>
+    <nav class="header">
+        <ul class="menu1">
+            <li class="letter">News<span id="letter">A</span>Sport</li>
+            <li id="date"></li>
+        </ul>
+        <div class="nut" onclick="toggleMenu()">&#9776;</div>
+        <ul class="menu" id="menu">
+            <li id="left">
+                <li >
+                    <li><input id="search" class="search-bar" type="text" placeholder="Tìm kiếm..."></li>
+                    <li>    <a href="#" id="icon">
+                            <i class="fas fa-search"></i>
+                        </a>
+                    </li>
+                </li>
+                <li><a href="#">Tin tức</a>
+                    <ul class="submenu">
+                        <li id="old"><a href="#">Tin cũ nhất</a></li>
+                        <li id="newtin"><a href="#">Tin mới nhất</a></li>
+                        <li id="all"><a href="#">Tất cả các tin</a></li>
+                    </ul>    
+                </li>
+                <li id="quanli"><a href="quanlitaikhoan.html">Quản lí tài khoản</a></li>
+                <li id="trangduyet"><a href="duyetbai.html">Duyệt bài</a></li>
+                <li id="trangdang"><a href="dangbai.html">Đăng bài</a></li>
+                
+                <li><a href="trangchu.html">Trang chủ</a></li>
+                
+            </li>
+            <li id="right">
+                <li class="logout">
+                    <a href="#" id="logoutBt">
+                        <i class="fas fa-user" class="logo"></i>
+                        <p id="hide">Đăng xuất</p>
+                    </a>
+                </li>
+                <li class="con">
+                    <a id="con" href="lienhe.html">
+                        <i class="fas fa-envelope" class="logo"></i>
+                        <p id="hide">Liên hệ</p>
+                    </a>
+                </li>
+            </li>
+        </ul>
+    </nav>
+    <div class="lay hidden" id="lay"></div>
+    <div class="content">
+        <h1 id="tintuc"></h1>
+        <div class="news" id="news">
+            
+        </div>
+    </div>
+</body>
+</html>

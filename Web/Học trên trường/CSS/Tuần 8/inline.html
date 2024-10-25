@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Complete Example</title>
+  <style>
+    .flex-container {
+      display: flex;
+      background-color: #f0f0f0;
+      margin: 20px 0;
+      padding: 10px;
+    }
+
+    .flex-item {
+      background-color: #4CAF50;
+      color: white;
+      padding: 20px;
+      margin: 5px;
+      text-align: center;
+    }
+
+    /* Flex-direction */
+    .column {
+      flex-direction: column;
+    }
+    .column-reverse {
+      flex-direction: column-reverse;
+    }
+    .row {
+      flex-direction: row;
+    }
+    .row-reverse {
+      flex-direction: row-reverse;
+    }
+
+    /* Flex-wrap */
+    .nowrap {
+      flex-wrap: nowrap;
+    }
+    .wrap {
+      flex-wrap: wrap;
+    }
+    .wrap-reverse {
+      flex-wrap: wrap-reverse;
+    }
+
+    /* Flex-flow */
+    .row-wrap {
+      flex-flow: row wrap;
+    }
+
+    /* Justify-content */
+    .justify-center {
+      justify-content: center;
+    }
+    .justify-start {
+      justify-content: flex-start;
+    }
+    .justify-end {
+      justify-content: flex-end;
+    }
+    .space-around {
+      justify-content: space-around;
+    }
+    .space-between {
+      justify-content: space-between;
+    }
+
+    /* Align-items */
+    .align-center {
+      align-items: center;
+    }
+    .align-start {
+      align-items: flex-start;
+    }
+    .align-end {
+      align-items: flex-end;
+    }
+    .align-stretch {
+      align-items: stretch;
+    }
+    .align-baseline {
+      align-items: baseline;
+    }
+
+    /* Flex items properties */
+    .order {
+      order: 2;
+    }
+    .grow {
+      flex-grow: 2;
+    }
+    .shrink {
+      flex-shrink: 2;
+    }
+    .basis {
+      flex-basis: 150px;
+    }
+    .self-start {
+      align-self: flex-start;
+    }
+    .self-center {
+      align-self: center;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Flexbox Example - Full Guide</h1>
+
+  <!-- Flex Container -->
+
+  <h2>Flex Container</h2>
+
+  <!-- Flex-direction -->
+  <h3>Flex-direction</h3>
+  <h4>column</h4>
+  <div class="flex-container column">
+    <div class="flex-item">Item 1</div>
+    <div class="flex-item">Item 2</div>
+    <div class="flex-item">Item 3</div>
+  </div>
+
+  <h4>column-reverse</h4>
+  <div class="flex-container column-reverse">
+    <div class="flex-item">Item 1</div>
+    <div class="flex-item">Item 2</div>
+    <div class="flex-item">Item 3</div>
+  </div>
+
+  <h4>row</h4>
+  <div class="flex-container row">
+    <div class="flex-item">Item 1</div>
+    <div class="flex-item">Item 2</div>
+    <div class="flex-item">Item 3</div>
+  </div>
+
+  <h4>row-reverse</h4>
+  <div class="flex-container row-reverse">
+    <div class="flex-item">Item 1</div>
+    <div class="flex-item">Item 2</div>
+    <div class="flex-item">Item 3</div>
+  </div>
+
+  <!-- Flex-wrap -->
+  <h3>flex-wrap</h3>
+  <h4>no-wrap</h4>
+  <div class="flex-container nowrap" style="width: 200px;">
+    <div class="flex-item">Item 1</div>
+    <div class="flex-item">Item 2</div>
+    <div class="flex-item">Item 3</div>
+  </div>
+
+  <h4>wrap</h4>
+  <div class="flex-container wrap" style="width: 200px;">
+    <div class="flex-item">Item 1</div>
+    <div class="flex-item">Item 2</div>
+    <div class="flex-item">Item 3</div>
+  </div>
+
+  <h4>wrap-reverse</h4>
+  <div class="flex-container wrap-reverse" style="width: 200px;">
+    <div class="flex-item">Item 1</div>
+    <div class="flex-item">Item 2</div>
+    <div class="flex-item">Item 3</div>
+  </div>
+
+  <!-- Flex-flow -->
+  <h3>flex-flow: row wrap</h3>
+  <div class="flex-container row-wrap" style="width: 200px;">
+    <div class="flex-item">Item 1</div>
+    <div class="flex-item">Item 2</div>
+    <div class="flex-item">Item 3</div>
+    <div class="flex-item">Item 4</div>
+  </div>
+
+  <!-- Justify-content and Align-items -->
+  <h3>justify-content & align-items</h3>
+
+  <h4>center</h4>
+  <div class="flex-container justify-center align-center" style="height: 150px;">
+    <div class="flex-item">Item 1</div>
+    <div class="flex-item">Item 2</div>
+    <div class="flex-item">Item 3</div>
+  </div>
+
+  <h4>flex-start</h4>
+  <div class="flex-container justify-start align-start" style="height: 150px;">
+    <div class="flex-item">Item 1</div>
+    <div class="flex-item">Item 2</div>
+    <div class="flex-item">Item 3</div>
+  </div>
+
+  <h4>flex-end</h4>
+  <div class="flex-container justify-end align-end" style="height: 150px;">
+    <div class="flex-item">Item 1</div>
+    <div class="flex-item">Item 2</div>
+    <div class="flex-item">Item 3</div>
+  </div>
+
+  <!-- Justify-content -->
+  <h3>justify-content</h3>
+  <h4>space-around</h4>
+  <div class="flex-container space-around">
+    <div class="flex-item">Item 1</div>
+    <div class="flex-item">Item 2</div>
+    <div class="flex-item">Item 3</div>
+  </div>
+
+  <h4>space-between</h4>
+  <div class="flex-container space-between">
+    <div class="flex-item">Item 1</div>
+    <div class="flex-item">Item 2</div>
+    <div class="flex-item">Item 3</div>
+  </div>
+
+  <!-- Align-items -->
+  <h3>align-items</h3>
+  <h4>stretch</h4>
+  <div class="flex-container align-stretch" style="height: 150px;">
+    <div class="flex-item">Item 1</div>
+    <div class="flex-item">Item 2</div>
+    <div class="flex-item">Item 3</div>
+  </div>
+
+  <h4>baseline</h4>
+  <div class="flex-container align-baseline" style="height: 150px;">
+    <div class="flex-item">Item 1</div>
+    <div class="flex-item">Item 2</div>
+    <div class="flex-item">Item 3</div>
+  </div>
+
+  <!-- Flex Items -->
+
+  <h2>Flex Items</h2>
+
+  <h3>order</h3>
+  <div class="flex-container">
+    <div class="flex-item order">Item 1 (order: 2)</div>
+    <div class="flex-item">Item 2</div>
+    <div class="flex-item">Item 3</div>
+  </div>
+
+  <h3>flex-grow</h3>
+  <div class="flex-container">
+    <div class="flex-item grow">Item 1 (grow: 2)</div>
+    <div class="flex-item">Item 2</div>
+    <div class="flex-item">Item 3</div>
+  </div>
+
+  <h3>flex-shrink</h3>
+  <div class="flex-container" style="width: 300px;">
+    <div class="flex-item shrink">Item 1 (shrink: 2)</div>
+    <div class="flex-item">Item 2</div>
+    <div class="flex-item">Item 3</div>
+  </div>
+
+  <h3>flex-basis</h3>
+  <div class="flex-container">
