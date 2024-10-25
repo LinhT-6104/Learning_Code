@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Tra_loi_cau_hoi_trac_nghiem" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.Tra_loi_cau_hoi_trac_nghiem" parent="Base.Theme.Tra_loi_cau_hoi_trac_nghiem" />
+</resources>

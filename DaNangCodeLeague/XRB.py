@@ -1,0 +1,8 @@
+MEXOR = list()
+MEXOR.append(3^0)
+MEXOR.append(3^1)
+MEXOR.append(3^2)
+MEXOR.append(3^3)
+MEXOR.append(3^4)
+MEXOR.append(3^5)
+print(MEXOR)

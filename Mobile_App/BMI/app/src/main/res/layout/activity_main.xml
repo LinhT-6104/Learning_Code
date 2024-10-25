@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="Phần mềm tính BMI"
+            android:textColor="#F44336"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/edtChieuCao"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="Chiều cao (m)..." />
+
+        <EditText
+            android:id="@+id/edtCanNang"
+            android:inputType="numberDecimal"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="Cân nặng (kg)..." />
+
+        <Button
+            android:id="@+id/btnTinh"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:backgroundTint="#2196F3"
+            android:text="TÍNH BMI" />
+
+        <ImageView
+            android:layout_width="400dp"
+            android:layout_height="200dp"
+            android:src="@drawable/bmi"/>
+
+        <TextView
+            android:id="@+id/tvKetQua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#F44336"
+            android:textSize="20dp"
+            android:layout_gravity="center_horizontal"
+            android:text="Vui lòng nhập chiều cao \n và cân nặng"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

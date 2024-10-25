@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:text="Câu hỏi: Thủ đô của Việt Nam là?"
+            android:textSize="80px"
+            android:textColor="#5551B0"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100px"
+            android:layout_marginRight="100px"
+            />
+        <ImageView
+            android:src="@drawable/anh_co"
+            android:layout_width="match_parent"
+            android:layout_height="400px" />
+        <RadioGroup
+            android:id="@+id/radgTP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="20px">
+
+            <RadioButton
+                android:id="@+id/radBangkok"
+                android:layout_width="393dp"
+                android:layout_height="wrap_content"
+                android:text="Bangkok"
+                android:textSize="20sp" />
+            <RadioButton
+                android:id="@+id/radHaNoi"
+                android:text="Hà Nội"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <RadioButton
+                android:id="@+id/radHCM"
+                android:text="Thành phố Hồ Chí Minh"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <RadioButton
+                android:id="@+id/radLondon"
+                android:text="London"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </RadioGroup>
+        <Button
+            android:id="@+id/btnTraLoi"
+            android:text="Trả lời"
+            android:textSize="20sp"
+            android:backgroundTint="#1F96F5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btnXemDapAn"
+            android:text="Xem đáp án"
+            android:textSize="20sp"
+            android:backgroundTint="#4CB050"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tvLuaChon"
+            android:textSize="20sp"
+            android:textColor="#f55"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

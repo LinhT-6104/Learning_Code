@@ -1,0 +1,24 @@
+--
+-- File generated with SQLiteStudio v3.4.4 on T3 Thg7 16 22:54:42 2024
+--
+-- Text encoding used: UTF-8
+--
+PRAGMA foreign_keys = off;
+BEGIN TRANSACTION;
+
+-- Table: congviec
+DROP TABLE IF EXISTS congviec;
+
+CREATE TABLE IF NOT EXISTS congviec (
+    key       INTEGER  PRIMARY KEY AUTOINCREMENT,
+    maCV      CHAR,
+    tenCV     CHAR,
+    noiDungCV CHAR,
+    thoiHan   DATETIME
+);
+
+INSERT INTO congviec (key, maCV, tenCV, noiDungCV, thoiHan) VALUES (1, 'CV001', 'học tiếng Anh', 'Luyện thi VSTEP', '2024-07-16 22:49:00');
+INSERT INTO congviec (key, maCV, tenCV, noiDungCV, thoiHan) VALUES (2, 'CV002', 'a', 'b', '2024-07-17 10:50:06');
+
+COMMIT TRANSACTION;
+PRAGMA foreign_keys = on;
