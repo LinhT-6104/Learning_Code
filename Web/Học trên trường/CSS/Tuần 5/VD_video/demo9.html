@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector</title>
+    <style type="text/css">
+        #div1 {
+            width: 800px;
+            background: pink;
+            font-size: 40px;
+        }
+        /* div div{
+            background: lightgreen;
+        } */
+        /* .class1 div {
+            background: blue;
+        } */
+
+        .class1 span {
+            background: lawngreen;
+        }
+        .class1 > div{
+            background: black;
+            color: white;
+        }
+
+        #div1 + h3{
+            background: brown;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <blockquote><blockquote><blockquote>
+        <div id="div1" class="class1">
+            <div>
+                Thẻ div thứ nhất nằm trong div có id=div1
+            </div>
+            <p class="class1">
+                Thẻ p nằm trong div có id = div1
+                <span>thẻ span nằm trong thẻ p có class=class1</span>
+            </p>
+            <div class="class3">
+                Thẻ div nằm trong div có class=class1
+                <div>
+                    Thẻ div nằm trong div có class là class 1
+                </div>
+                <span>Thẻ span nằm trong thẻ div có class=class1</span>
+                <div>Thẻ div là con trực tiếp của class bằng class1</div>
+            </div>
+        </div>
+        <h3>Thẻ h3 nằm ngay sau thẻ div</h3>
+        <p>Thẻ p nằm ngay sau thẻ div</p>
+    </blockquote></blockquote></blockquote>
+</body>
+</html>

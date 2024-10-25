@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ví dụ white-space</title>
+    <style>
+        .normal-space {
+            white-space: normal;
+            width: 200px;
+            border: 1px solid black;
+            margin-bottom: 10px;
+        }
+
+        .nowrap-space {
+            white-space: nowrap;
+            width: 200px;
+            border: 1px solid black;
+            margin-bottom: 10px;
+        }
+
+        .pre-space {
+            white-space: pre;
+            width: 200px;
+            border: 1px solid black;
+            margin-bottom: 10px;
+        }
+
+        .pre-wrap-space {
+            white-space: pre-wrap;
+            width: 200px;
+            border: 1px solid black;
+            margin-bottom: 10px;
+        }
+
+        .pre-line-space {
+            white-space: pre-line;
+            width: 200px;
+            border: 1px solid black;
+            margin-bottom: 10px;
+        }
+
+        .break-space {
+            white-space: break-spaces;
+            width: 200px;
+            border: 1px solid black;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="normal-space">
+        Đây là     một   văn bản     với    rất   nhiều  khoảng trắng   nhưng chúng sẽ bị thu gọn lại.
+    </div>
+
+    <div class="nowrap-space">
+        Đây là     một   văn bản     với    rất   nhiều  khoảng trắng   và sẽ không bị ngắt dòng.
+    </div>
+
+    <div class="pre-space">
+        Đây là     một   văn bản     với    rất   nhiều  khoảng trắng   và sẽ được giữ nguyên.
+    </div>
+
+    <div class="pre-wrap-space">Đây là     một   văn bản     với    rất   nhiều  khoảng trắng   và sẽ giữ nguyên khoảng trắng nhưng vẫn tự ngắt dòng nếu quá dài.
+    </div>
+
+    <div class="pre-line-space">
+        Đây là     một   văn bản     với    rất   nhiều  khoảng trắng   nhưng chỉ xuống dòng sẽ được giữ nguyên, còn khoảng trắng thì sẽ thu gọn.
+    </div>
+
+    <div class="break-space">
+        Đây là     một   văn bản     với    rất   nhiều  khoảng trắng    và sẽ ngắt dòng ở những khoảng trắng và giữ nguyên khoảng trắng đó.
+    </div>
+
+</body>
+</html>

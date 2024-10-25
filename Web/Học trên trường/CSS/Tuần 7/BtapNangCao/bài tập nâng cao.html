@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <title>Bài tập nhanh</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .menu-container {
+            position: absolute;
+            top: 100px; 
+            left: 100px; 
+            width: 250px;
+            background-color: #fff;
+            border: 1px solid black;
+        }
+
+        .menu-cap-1 > li {
+            background-color: #fff;
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .menu-cap-1 > li:hover {
+            background-color: #eaeaea;
+        }
+
+        .menu-cap-1 > li:last-child {
+            border-bottom: none;
+        }
+
+        .menu-cap-2, .menu-cap-3 {
+            position: absolute;
+            top: 0;
+            left: 100%;
+            background-color: #b9afaf;
+            display: none;
+            width: 200px;
+            z-index: 1000;
+        }
+
+        .menu-cap-1 > li:hover .menu-cap-2 {
+            display: block;
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .menu-cap-2 > li {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+            position: relative;
+        }
+
+        .menu-cap-2 > li:hover {
+            background-color: #f9f9f9;
+        }
+
+        .menu-cap-2 > li:last-child {
+            border-bottom: none;
+        }
+
+        .menu-cap-2 > li:hover .menu-cap-3 {
+            display: block;
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .menu-cap-3 {
+            left: 100%;
+            background-color: #181515;
+            display: none;
+            padding: 0;
+            border: 1px solid #ddd;
+            width: 180px;
+            z-index: 2000;
+        }
+
+        .menu-cap-3 > li {
+            padding: 8px;
+            text-decoration: underline; 
+            color: red;
+        }
+
+        .menu-cap-3 > li:hover {
+            background-color: #eaeaea;
+        }
+
+        .menu-cap-3 > li:last-child {
+            border-bottom: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="menu-container">
+        <ul class="menu-cap-1">
+            <li>Laptop, Macbook, Surface
+                <ul class="menu-cap-2">
+                    <li>
+                        Laptop Acer
+                        <ul class="menu-cap-3">
+                            <li>Laptop Acer-M</li>
+                            <li>Laptop Acer-E</li>
+                            <li>Laptop Acer-C</li>
+                            <li>Laptop Acer-K</li>
+                        </ul>
+                    </li>
+                    <li>Laptop Dell</li>
+                    <li>Laptop HP</li>
+                    <li>Laptop Lenovo</li>
+                </ul>
+            </li>
+            <li>Laptop Gaming, Đồ Họa</li>
+            <li>Phụ Kiện Laptop, PC, Mobile</li>
+        </ul>
+    </div>
+</body>
+</html>

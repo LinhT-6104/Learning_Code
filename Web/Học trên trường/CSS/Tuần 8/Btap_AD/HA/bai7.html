@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 7</title>
+    <style>
+        .header {
+            background-color: #31D491;
+            height: 100px;
+            text-align: center;
+        }
+        .main-content {
+            background-color: rgb(249, 67, 97);
+            height: 230px;
+            text-align: center;
+            margin-top: -20px;
+            color: white;
+        }
+        .menu-container {
+            position: absolute;
+            margin-left: 20px;
+            margin-top: 30px;
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: row;
+            flex: 1;
+        }
+        .menu-item {
+            position: relative;
+            margin-left: 90px;
+            background-color: rgb(248, 105, 129);
+            height: 20px;
+            width: 50px;
+            text-align: center;
+        }
+        .menu-item:hover {
+            background-color: rgb(255, 167, 182);
+            cursor: pointer;
+        }
+        .footer {
+            background-color: pink;
+            height: 100px;
+            text-align: center;
+            margin-top: -20px;
+        }
+        .submenu-container {
+            position: absolute;
+            margin-left: 20px;
+            margin-top: 90px;
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: row;
+            flex: 1;
+        }
+        .secondary-content {
+            background-color: rgb(67, 137, 249);
+            height: 230px;
+            text-align: center;
+            margin-top: -20px;
+            color: white;
+        }
+        .even-item:nth-child(even) {
+            background-color: brown;
+        }
+        .even-item:nth-child(even):hover {
+            background-color: rgb(249, 77, 77);
+        }
+        .space {
+            width: 100%;
+            height: 10px;
+            background: #545556;
+            margin-top: 30px;
+        }
+        .tertiary-content {
+            background-color: rgb(0, 202, 7);
+            height: 580px;
+            text-align: center;
+            margin-top: -20px;
+            color: white;
+        }
+        .banner {
+            background-color: rgb(100, 155, 18);
+            height: 150px;
+            width: 1490px;
+        }
+        .image-wrapper {
+            margin-top: 10px;
+            margin-left: 10px;
+            position: absolute;
+        }
+        .content-wrapper {
+            margin-top: 10px;
+            margin-left: 180px;
+            position: relative;
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: column;
+            flex: 1;
+        }
+        .image {
+            width: 280px;
+        }
+        .news-block {
+            background-color: pink;
+            width: 100px;
+            margin-left: 290px;
+            margin-top: 10px;
+        }
+        .news-row {
+            position: relative;
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: row;
+            flex: 1;
+        }
+        .news-left {
+            background-color: pink;
+            width: 180px;
+            position: absolute;
+            margin-left: 15px;
+        }
+        .news-right {
+            background-color: pink;
+            width: 200px;
+            margin-left: 205px;
+            position: absolute;
+        }
+        .description {
+            background-color: pink;
+            width: 390px;
+            height: 220px;
+            margin-top: 60px;
+            margin-left: 305px;
+            position: absolute;
+        }
+        .news2-block {
+            background-color: pink;
+            width: 100px;
+            margin-left: 690px;
+            margin-top: 0px;
+        }
+        .news2-row {
+            position: relative;
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: row;
+            flex: 1;
+        }
+        .news2-left {
+            background-color: pink;
+            width: 180px;
+            position: absolute;
+            margin-left: 15px;
+        }
+        .news2-right {
+            background-color: pink;
+            width: 200px;
+            margin-left: 205px;
+            position: absolute;
+        }
+        .description2 {
+            background-color: pink;
+            width: 390px;
+            height: 220px;
+            margin-top: 60px;
+            margin-left: 705px;
+            position: absolute;
+        }
+        .ads-wrapper {
+            margin-left: 30px;
+            position: relative;
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: row;
+            flex: 1;
+        }
+        .ads-item {
+            background-color: pink;
+            position: absolute;
+            margin-top: 290px;
+            margin-left: 160px;
+            height: 30px;
+            width: 60px;
+        }
+        .ads-item2 {
+            margin-left: 230px;
+        }
+        .ads-item3 {
+            margin-left: 300px;
+        }
+        .ads-item4 {
+            margin-left: 380px;
+        }
+        .ads-item5 {
+            margin-left: 455px;
+            width: 790px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h2>Phần đầu trang</h2>
+    </div>
+    <div class="main-content" style="height: 100px">
+        <h2>Phần chính của trang</h2>
+
+        <div class="menu-container">
+            <div class="menu-item">Item 1</div>
+            <div class="menu-item">Item 2</div>
+            <div class="menu-item">Item 3</div>
+            <div class="menu-item">Item 4</div>
+            <div class="menu-item">Item 5</div>
+            <div class="menu-item">Item 6</div>
+            <div class="menu-item">Item 7</div>
+            <div class="menu-item">Item 8</div>
+            <div class="menu-item">Item 9</div>
+        </div>
+    </div>
+    <div class="footer">
+        <h2>Phần chân trang</h2>
+    </div>
+
+    <div class="header">
+        <h2>Phần đầu trang</h2>
+    </div>
+    <div class="secondary-content" style="height: 170px;">
+        <h2>Phần chính của trang</h2>
+
+        <div class="menu-container">
+            <div class="menu-item even-item">Item 1</div>
+            <div class="menu-item even-item">Item 2</div>
+            <div class="menu-item even-item">Item 3</div>
+            <div class="menu-item even-item">Item 4</div>
+            <div class="menu-item even-item">Item 5</div>
+            <div class="menu-item even-item">Item 6</div>
+            <div class="menu-item even-item">Item 7</div>
+            <div class="menu-item even-item">Item 8</div>
+            <div class="menu-item even-item">Item 9</div>
+        </div>
+        <div class="submenu-container">
+            <div class="menu-item even-item">Item 10</div>
+            <div class="menu-item even-item">Item 11</div>
+            <div class="menu-item even-item">Item 12</div>
+            <div class="menu-item even-item">Item 13</div>
+            <div class="menu-item even-item">Item 14</div>
+            <div class="menu-item even-item">Item 15</div>
+            <div class="menu-item even-item">Item 16</div>
+            <div class="menu-item even-item">Item 17</div>
+            <div class="menu-item even-item">Item 18</div>
+        </div>
+    </div>
+    <div class="footer">
+        <h2>Phần chân trang</h2>
+    </div>
+    
+    <div class="header">
+        <h2>Phần đầu trang</h2>
+        <div class="space"></div>
+    </div>
+    <div class="tertiary-content">
+        <h2>Phần chính của trang</h2>
+
+        <div class="banner">
+            <h3 class="Banner">Banner</h3>
+        </div>
+
+        <div class="content-wrapper">
+            <div>
+                <div class="image-wrapper">
+                    <img style="height: 280px;" class="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZYDmYNyRzoZheVVmDPUWynWSVrjmftv8wfg&s" alt="Mèo">
+                </div>
+                <div class="news-block">
+                    <div class="news-row">
+                        <div class="news-left">
+                            <p style="color: aqua;">Bản tin 1</p>
+                        </div>
+                        <div class="news-right">
+                            <p>Xem chi tiết</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="description">
+                    <p style="margin-top: 100px; font-size: large;">Nội dung mô tả</p>
+                </div>
+            </div>
+
+            <div>
+                <div class="news2-block">
+                    <div class="news2-row">
+                        <div class="news2-left">
+                            <p style="color: aqua;">Bản tin 2</p>
+                        </div>
+                        <div class="news2-right">
+                            <p>Xem chi tiết</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="description2">
+                    <p style="margin-top: 100px; font-size: large; color: aqua;">Nội dung mô tả</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="ads-wrapper">
+            <div class="ads-item">add1</div>
+            <div class="ads-item ads-item2" style="color: aqua;">add2</div>
+            <div class="ads-item ads-item3">add3</div>
+            <div class="ads-item ads-item4" style="color: aqua;">add4</div>
+            <div class="ads-item ads-item5">Liên hệ với chúng tôi</div>
+        </div>
+    </div>
+</body>
+</html>

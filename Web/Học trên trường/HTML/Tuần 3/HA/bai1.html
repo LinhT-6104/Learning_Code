@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+    <!-- Đặt kích thước font lớn hơn để tăng độ nổi bật -->
+    <font size="5">
+        <!-- Bảng đầu tiên với các ô màu xanh và đỏ -->
+        <table border="2" cellspacing="3">
+            <!-- Hàng đầu tiên với các ô màu xanh và đỏ -->
+            <tr height="50">
+                <!-- Các ô màu xanh với chữ đậm -->
+                <td bgcolor="green" align="center" valign="middle" width="50"><b>1</b></td>
+                <td bgcolor="green" align="center" valign="middle" width="50"><b>2</b></td>
+                <td bgcolor="red" align="center" valign="middle" width="50"><b>3</b></td>
+                <td bgcolor="green" align="center" valign="middle" width="50"><b>4</b></td>
+            </tr>
+            <!-- Hàng thứ hai với màu nền vàng -->
+            <tr bgcolor="yellow">
+                <td align="center" valign="middle">5</td>
+                <td align="center" valign="middle">6</td>
+                <td align="center" valign="middle">7</td>
+                <td align="center" valign="middle">8</td>
+            </tr>
+            <!-- Hàng thứ ba không có màu nền -->
+            <tr>
+                <td align="center" valign="middle">9</td>
+                <td align="center" valign="middle">10</td>
+                <td align="center" valign="middle">11</td>
+                <td align="center" valign="middle">12</td>
+            </tr>
+        </table>
+
+        <br>
+
+        <!-- Bảng thứ hai với các cột gộp ô -->
+        <table border="2" cellspacing="3">
+            <tr height="30">
+                <td colspan="2" align="center">1</td>
+                <td align="center">3</td>
+                <td align="center">4</td>
+            </tr>
+            <tr>
+                <td align="center" width="60">5</td>
+                <td align="center" width="60">6</td>
+                <td align="center" width="60">7</td>
+                <td align="center" width="60">8</td>
+            </tr>
+            <tr>
+                <td align="center">9</td>
+                <td align="center">10</td>
+                <td align="center">11</td>
+                <td align="center">12</td>
+            </tr>
+            <tr>
+                <td align="center">13</td>
+                <td colspan="2" align="center">14</td>
+                <td align="center">16</td>
+            </tr>
+        </table>
+
+        <hr>
+
+        <!-- Bảng thứ ba với các ô màu sắc đa dạng và gộp ô -->
+        <table border="2" cellspacing="3">
+            <tr height="30">
+                <!-- Ô màu hồng kéo dài 2 hàng -->
+                <td rowspan="2" bgcolor="pink" align="center" valign="middle" width="60">5</td>
+                <td bgcolor="blue" align="center">2</td>
+                <td bgcolor="yellow" align="center">3</td>
+                <td bgcolor="green" align="center">4</td>
+            </tr>
+            <tr>
+                <td bgcolor="brown" align="center" width="60">6</td>
+                <td bgcolor="orange" align="center" width="60">7</td>
+                <td bgcolor="blue" align="center" width="60">8</td>
+            </tr>
+            <tr>
+                <td align="center">9</td>
+                <td align="center">10</td>
+                <td align="center">11</td>
+                <!-- Ô màu hồng kéo dài 2 hàng -->
+                <td rowspan="2" bgcolor="pink" align="center">12</td>
+            </tr>
+            <tr>
+                <td align="center">13</td>
+                <!-- Gộp 2 ô -->
+                <td colspan="2" align="center">14</td>
+            </tr>
+        </table>
+    </font>
+</body>
+</html>
