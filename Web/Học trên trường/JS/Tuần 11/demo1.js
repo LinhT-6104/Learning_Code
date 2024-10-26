@@ -1,0 +1,1 @@
+alert('Bạn vừa khai báo JS bằng External');
