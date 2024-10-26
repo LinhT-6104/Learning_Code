@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hàm trong JS</title>
+</head>
+<body>  
+    <script>
+        // Hàm không có tham số truyền vào 
+        function show() {
+            console.log("Đây là hàm show");
+        }
+        show();
+
+        // Hàm có tham số truyền vào 
+        function sum(a, b) {
+            var tong = a + b;
+            console.log("Tổng của a và b là: " + tong);
+        }
+        sum(3, 6); // Giá trị ???
+
+        // Hàm có giá trị trả về
+        function sum1(a, b, c) {
+            var cong = a + b + c;
+            return cong;
+        }
+        var number1 = sum1(3,4,5);
+        var number2 = 6;
+        console.log(number1 - number2);
+
+    </script>
+</body>
+</html>

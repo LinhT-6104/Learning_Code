@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var ViecCanLam = ["viec1","viec2","viec3","viec4","viec5"];
+        function themViec(viec) {
+            ViecCanLam.push(viec);
+        }
+        function hienThiCongViec() {
+            var n = ViecCanLam.length;
+            switch(n) {
+                case 0:
+                    document.write("Không có công việc nào");
+                default:
+                    for (i = 0 ; i < n ; i++) {
+                        document.write(ViecCanLam[i] + " ");
+                    }
+            }
+        }
+        themViec("viec6");
+        hienThiCongViec();
+    </script>
+</body>
+</html>

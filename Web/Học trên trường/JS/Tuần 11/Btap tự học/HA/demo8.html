@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lệnh if ... else switch case</title>
+</head>
+<body>
+    <script>
+        var myNum1 = 7;
+        var myNum2 = 10;
+        // if
+        if (myNum1 < myNum2) {
+            alert("Javascript rất dễ đọc.")
+        }
+
+        // if else
+        if (myNum1 > myNum2) {
+            alert("Đây là khối lệnh 1");
+        } else {
+            alert("Đây là khối lệnh 2");
+        }
+
+        // if else if else
+        var course = 3;
+        if (course == 1) {
+            document.write("HTML Tutorial");
+        } else if (course == 2) {
+            document.write("CSS Tutorial");
+        } else {
+            document.write("JavaScript Tutorial");
+        }
+
+        // switch case
+        var day = 2;
+        switch (day) {
+            case 1:
+                document.write("Monday");
+                break;
+            case 2:
+                document.write("Tuesday");
+                break;
+            case 3:
+                document.write("Wednesday");
+                break;
+            default:
+                document.write("Another day");
+        }
+    </script>
+</body>
+</html>
